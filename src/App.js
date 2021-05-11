@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import ButtonNeon from './components/Button/Neon/ButtonNeon';
+import ButtonNeu from './components/Button/Neumorphism/ButtonNeu';
 
 function App() {
   return (
     <>
       <Navbar />
       <ButtonNeon />
+      <ButtonNeu />
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

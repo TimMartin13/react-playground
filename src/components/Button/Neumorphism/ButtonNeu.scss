@@ -1,0 +1,38 @@
+$clr-bg: #ececec;
+
+.neu-background {
+  min-height: 25vh;
+  display: grid;
+  place-items: center;
+  background: $clr-bg;
+
+  h1 {
+    position: absolute;
+    margin: 10px;
+  }
+}
+
+.neu-button {
+  font-size: 53px;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease-out;
+  color: #696969;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
+              -4px -4px 6px #fff;
+  border-radius: 50%;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+              -4px -4px 10px #fff,
+              4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset,
+              -4px -4px 10px #fff inset;
+    color: hsl(94, 91%, 57%);
+  }
+}
