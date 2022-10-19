@@ -7,7 +7,7 @@ $clr-bg: #ececec;
   background: $clr-bg;
 
   h1 {
-    position: absolute;
+    position: relative;
     margin: 10px;
   }
 }
@@ -22,17 +22,23 @@ $clr-bg: #ececec;
   transition: color 0.2s ease, transform 0.2s ease-out;
   color: #696969;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
-              -4px -4px 6px #fff;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px #fff;
   border-radius: 50%;
   outline: none;
 
+  &:hover {
+    outline: none;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px #fff;
+  }
+
   &:focus {
     outline: none;
-    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
-              -4px -4px 10px #fff,
-              4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset,
-              -4px -4px 10px #fff inset;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px #fff,
+      4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px #fff inset;
+  }
+
+  &:hover,
+  &:focus {
     color: hsl(94, 91%, 57%);
   }
 }
