@@ -3,34 +3,20 @@ import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import ButtonNeon from './components/Button/Neon/ButtonNeon';
 import ButtonNeu from './components/Button/Neumorphism/ButtonNeu';
+import ButtonClay from './components/Button/Claymorphism/ButtonClay';
 import AnimatedProfileCard from './components/AnimatedProfileCard/AnimatedProfileCard';
 
 function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <div className='buttons'>
+      <section className='buttons'>
         <ButtonNeon />
         <ButtonNeu />
-      </div>
+        <ButtonClay />
+      </section>
       <div className='profileCards'>
         <AnimatedProfileCard />
-      </div>
-      <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className='App-link'
-            href='https://reactjs.org'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Learn React
-          </a>
-        </header>
       </div>
     </>
   );

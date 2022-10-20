@@ -37,8 +37,15 @@
   }
 }
 
-.buttons {
+section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
+  background-color: #030303;
+  min-height: 30vh;
+}
+
+.buttons {
+  height: 15rem;
 }

@@ -1,0 +1,42 @@
+.clay-background {
+  min-height: 25vh;
+  display: grid;
+  place-items: center;
+  background: #2f363e;
+  border-radius: 2rem;
+
+  h1 {
+    position: relative;
+    margin: 10px;
+    color: #1f83f2;
+  }
+}
+
+.clay-button {
+  // Size
+  width: 9rem;
+  height: 4rem;
+  margin: 10px 0;
+  // Color
+  background: #1f83f2;
+  color: #fff;
+  // Button styles
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  // Text styles
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
