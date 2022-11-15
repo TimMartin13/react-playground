@@ -5,9 +5,7 @@ const ButtonClay = () => {
   return (
     <div className='clay-background'>
       <h1>Claymorphism</h1>
-      <a href='#' className='clay-button'>
-        Gromit
-      </a>
+      <button className='clay-button'>Gromit</button>
     </div>
   );
 };

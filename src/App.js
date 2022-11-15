@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.scss';
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 import ButtonNeon from './components/Button/Neon/ButtonNeon';
 import ButtonNeu from './components/Button/Neumorphism/ButtonNeu';
 import ButtonClay from './components/Button/Claymorphism/ButtonClay';
-import AnimatedProfileCard from './components/AnimatedProfileCard/AnimatedProfileCard';
+import AnimatedProfileCard from './components/Cards/AnimatedProfileCard/AnimatedProfileCard';
+import WaterDropletCard from './components/Cards/WaterDropletCard/WaterDropletCard';
 
 function App() {
   return (
@@ -15,9 +15,10 @@ function App() {
         <ButtonNeu />
         <ButtonClay />
       </section>
-      <div className='profileCards'>
+      <section className='profileCards'>
         <AnimatedProfileCard />
-      </div>
+        <WaterDropletCard />
+      </section>
     </>
   );
 }
